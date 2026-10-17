@@ -47,6 +47,14 @@ body {
   border-bottom: 1px solid #dbeafe;
 }
 
+.meta-line {
+  text-align: center;
+  color: #5b7a94;
+  font-size: 11.5px;
+  margin-top: -18px;
+  margin-bottom: 24px;
+}
+
 h1 {
   color: #14548f;
   font-size: 15px;
@@ -57,7 +65,16 @@ h1 {
   border-left: 4px solid #2563eb;
 }
 
-p, ul {
+h2 {
+  color: #1d4f7c;
+  font-size: 13px;
+  font-weight: 700;
+  margin-top: 16px;
+  margin-bottom: 6px;
+  padding-left: 12px;
+}
+
+p, ul, ol {
   color: #33526b;
   font-size: 12.5px;
   line-height: 1.75;
@@ -70,7 +87,14 @@ ul {
   margin-left: 20px;
 }
 
-a { color: #2563eb; font-weight: 600; text-decoration: none; }
+ol {
+  list-style-type: decimal;
+  margin-left: 24px;
+}
+
+li { margin-bottom: 4px; }
+
+a { color: #2563eb; font-weight: 600; text-decoration: none; word-break: break-word; }
 a:hover { color: #14548f; text-decoration: underline; }
 
 strong { color: #10263e; }
@@ -86,6 +110,15 @@ strong { color: #10263e; }
   color: #7c3a0a;
   line-height: 1.7;
 }
+
+.warning-box p {
+  color: #7c3a0a;
+  font-size: 12px;
+  padding-left: 0;
+  margin-bottom: 8px;
+}
+
+.warning-box p:last-child { margin-bottom: 0; }
 
 .btn-close-window {
   display: block;
@@ -157,39 +190,207 @@ strong { color: #10263e; }
     <div class="lang-en">
       <div class="header-title">PRIVACY POLICY</div>
       <div class="header-subtitle">Fair Life - A Creep Games</div>
+      <div class="meta-line">Effective Date and Last Updated: October 17, 2026</div>
 
-      <h1>1. Internet Connection Requirement</h1>
-      <p>Unlike our other titles, Fair Life is a <strong>100% offline game</strong> and does not require an internet connection at any time, not even at the start of every login. You can play Fair Life fully disconnected from the internet from the very first launch.</p>
+      <h1>1. Introduction, Scope, and Acceptance</h1>
+      <p>This Privacy Policy (hereinafter the "Policy") constitutes a comprehensive and authoritative articulation of the manner in which A Creep Games (hereinafter "we," "us," "our," or "the Developer") collects, receives, utilizes, discloses, retains, and safeguards information in connection with the interactive entertainment application known as Fair Life (hereinafter "Fair Life," "the Game," or "the Application").</p>
+      <p>By downloading, installing, launching, or otherwise accessing the Game, you affirm that you have read this Policy in its entirety, that you have comprehended its contents, and that you consent to the practices that are described herein. Should you find yourself unable to concur with any provision of this Policy, you are respectfully requested to refrain from using the Game and to remove it from your device.</p>
+      <p>This Policy applies exclusively to the Game and to the communications that you elect to initiate with us concerning the Game. It does not extend to any website, application, platform, or service that is operated by a third party, even where the Game contains a hyperlink to, or an integration with, such a third-party offering. We encourage you to scrutinize the privacy statements of every third party with which you interact.</p>
+      <p>We have endeavored to compose this Policy in language that is as precise and as exhaustive as is reasonably practicable, so that you may make a fully informed determination regarding whether and how you wish to use the Game. Where a provision of this Policy is reproduced in more than one language, the English-language text shall be regarded as the authoritative version in the event of any discrepancy in interpretation.</p>
 
-      <h1>2. Information We Collect</h1>
-      <p>Fair Life does not ask for any personal data.</p>
+      <h1>2. Internet Connectivity Requirement</h1>
+      <p>Earlier releases of Fair Life were designed to operate entirely without a network connection. The present release of the Game is materially different in this regard: <strong>Fair Life now requires an active internet connection in order to function.</strong> You will therefore be unable to enjoy the complete experience of the Game while your device remains disconnected from the internet.</p>
+      <p>This requirement arises principally because advertising content is retrieved from remote servers in real time whenever the Game requests it, and because certain presentational resources, such as typographic assets, are likewise retrieved from remote servers rather than being bundled exclusively within the Application itself.</p>
+      <p>As an inherent and unavoidable consequence of the manner in which internet communications operate, every network request that your device transmits discloses, at a minimum, the internet protocol (IP) address that has been assigned to your connection, together with certain technical metadata that are necessary for the recipient server to return a response. This disclosure is not a feature that we have introduced for our own benefit; it is a structural characteristic of all internet-based communication.</p>
+      <p>You are solely responsible for any charges that your mobile carrier, internet service provider, or data plan may levy in connection with the data that the Game transmits and receives. We recommend that you use an unmetered connection, such as a trusted Wi-Fi network, if you are concerned about data consumption.</p>
+      <p>We do not warrant that your internet connection will remain continuous, uninterrupted, or free from error, and we shall not be held accountable for any inability to use the Game that results from the unavailability, instability, or degradation of your network connection or of any remote server upon which the Game depends.</p>
+
+      <h1>3. Definitions</h1>
+      <p>For the purposes of this Policy, the following expressions shall bear the meanings that are ascribed to them below:</p>
       <ul>
-        <li>No need to register an account.</li>
-        <li>No need to login to an account.</li>
-        <li>Does not take any data from the Fair Life app, such as player save games, because save games use the local storage of the player's device.</li>
-        <li>No gameplay analytics.</li>
-        <li>Does not take any activity from the application.</li>
-        <li>Does not display third-party advertisements.</li>
-        <li>Does not sell or share any user data.</li>
+        <li><strong>"Personal Data"</strong> signifies any information that relates to an identified or identifiable natural person, including, where applicable law so provides, online identifiers such as an advertising identifier or an IP address.</li>
+        <li><strong>"Processing"</strong> signifies any operation or set of operations that is performed upon information, whether or not by automated means, including collection, recording, organization, storage, adaptation, retrieval, consultation, use, disclosure, transmission, restriction, erasure, or destruction.</li>
+        <li><strong>"Advertising Identifier"</strong> signifies a resettable, user-controllable, pseudonymous alphanumeric string that is assigned to a mobile device by its operating system for advertising and analytics purposes, such as the Android Advertising ID (AAID) or the Identifier for Advertisers (IDFA).</li>
+        <li><strong>"Google AdMob"</strong> or <strong>"AdMob"</strong> signifies the mobile advertising platform and software development kit that is operated and furnished by Google LLC, together with its affiliated entities, including Google Ireland Limited where applicable.</li>
+        <li><strong>"Local Storage"</strong> signifies the storage mechanism that is resident upon your own device, which permits the Game to preserve data between sessions without transmitting that data to any remote server.</li>
+        <li><strong>"Third Party"</strong> signifies any natural person or legal entity other than you and the Developer.</li>
       </ul>
-      <p>Every action that makes a difference in the probability of something happening in the game is static code that has many branches for many possibilities.</p>
 
-      <h1>3. Children's Privacy</h1>
-      <p>Since Fair Life does not collect any personal information, no personal data from children is collected or processed.</p>
+      <h1>4. Information That We Do Not Collect Directly</h1>
+      <p>Fair Life has been architected with the deliberate intention of minimizing the quantity of information that we ourselves collect. We wish to state, with as much clarity as the English language permits, the categories of information that we do <strong>not</strong> collect or maintain on our own servers or systems.</p>
+      <ul>
+        <li>We do not require you to register an account, to create a profile, or to furnish a username, a password, or any other credential.</li>
+        <li>We do not require you to log in to any account, whether one that is maintained by us or one that is maintained by a Third Party.</li>
+        <li>We do not ask for, and we do not store, your name, your postal address, your telephone number, your date of birth, your government-issued identification, or any comparable attribute of your civil identity.</li>
+        <li>We do not collect, process, or retain any payment card particulars, banking credentials, or other financial instruments, because the Game does not, as of the Effective Date of this Policy, offer any purchase that is processed by us.</li>
+        <li>We do not operate any first-party gameplay analytics, behavioral profiling, or telemetry service that records the decisions that you make or the manner in which you play.</li>
+        <li>We do not transmit your save games to any server that is operated by us. Save games reside exclusively within the Local Storage of your device.</li>
+        <li>We do not, as a matter of design, request access to your contacts, your camera, your microphone, your photographs, your short message service (SMS) content, your call logs, or your precise geographic location.</li>
+        <li>We do not construct advertising profiles, and we do not sell, rent, lease, or trade any Personal Data in exchange for monetary or other valuable consideration.</li>
+      </ul>
+      <p>The outcomes of in-game events that are governed by probability are determined by static program logic that executes locally upon your own device, comprising numerous conditional branches that correspond to numerous possible results. Such logic does not depend upon, and does not generate, any server-side profile of your identity or your conduct.</p>
+      <p>The foregoing statements describe the information that is collected by <em>us</em>. They must be read in conjunction with Section 6 and Section 7 of this Policy, which describe information that is collected by Third Parties whose technologies are integrated into the Game, and which necessarily qualify the otherwise minimal character of our own data practices.</p>
 
-      <h1>4. Changes to This Privacy Policy</h1>
-      <p>If this Privacy Policy is updated in the future, the updated version will be published on this page with a revised "Last updated" date.</p>
+      <h1>5. Locally Stored Data, Local Storage, and Similar Technologies</h1>
+      <h2>5.1 Data that is preserved upon your device</h2>
+      <p>To enable you to resume your progress and to preserve your preferences, the Game writes certain data to the Local Storage of your device. This data may include, without limitation, your save-game progress, the state of your in-game character and finances, and your display and interface preferences, such as your chosen language, graphical quality, resolution tier, frame-rate ceiling, and the visibility of interface elements.</p>
+      <p>This data is stored in plain, unencrypted form within the storage area that is allocated to the Application or to its embedded web environment by your operating system. It is created, read, modified, and deleted exclusively by the Game running upon your own device, and it is not transmitted to us.</p>
+      <h2>5.2 Your control over locally stored data</h2>
+      <p>You may erase this data at any time by clearing the Application's stored data through your device's system settings, by clearing the site data of the relevant browser if you are accessing the Game through a browser, or by uninstalling the Application. Please be advised that erasure is irreversible, and that we shall be unable to restore your progress because we do not possess a copy of it.</p>
+      <h2>5.3 Responsibility for device security</h2>
+      <p>Because this data resides upon your device and is not encrypted by the Game, its confidentiality depends upon the security of the device itself. You are responsible for safeguarding your device through appropriate measures, such as a screen lock, and for exercising prudence when sharing a device with other persons or when operating a device whose security restrictions have been deliberately removed.</p>
+      <h2>5.4 Classification of this storage</h2>
+      <p>The Local Storage that is described in this Section is employed solely to furnish functionality that you have affirmatively requested, namely the preservation of your progress and your settings. We regard it as strictly necessary for the operation of the Game, and it is not employed by us for the purposes of tracking you across applications or websites.</p>
+
+      <h1>6. Advertising and Google AdMob</h1>
+      <h2>6.1 Presence of third-party advertising</h2>
+      <p>The Game is supported by advertising. The present release integrates the Google AdMob software development kit in order to retrieve and to display advertisements, which may be presented in a variety of formats, including banner, interstitial, rewarded, native, and other formats that we may elect to deploy from time to time. This constitutes a material departure from earlier releases, which displayed no advertisements whatsoever.</p>
+      <h2>6.2 The role of Google</h2>
+      <p>When an advertisement is requested, your device communicates directly with servers that are operated by Google. Google determines which advertisement is to be delivered, records whether it was displayed or interacted with, and processes the associated information in accordance with its own privacy policy and its own advertising policies. With respect to certain aspects of this processing, Google may act as an independent data controller rather than as a processor acting upon our instructions, and we do not exercise control over those aspects.</p>
+      <h2>6.3 Categories of information that AdMob may collect</h2>
+      <p>The AdMob software development kit, and the Google servers with which it communicates, may automatically collect, receive, and process the following categories of information from or about your device. The specific information that is collected may vary according to your device, your operating system, your region, and the consent choices that you have made.</p>
+      <ul>
+        <li><strong>Advertising Identifier:</strong> the Android Advertising ID (AAID), the iOS Identifier for Advertisers (IDFA), or an equivalent resettable identifier, where your device and your settings permit its use.</li>
+        <li><strong>IP address and approximate location:</strong> the IP address of your connection, from which an approximate, coarse geographic location (such as country, region, or city) may be inferred. The Game does not request access to your precise GPS location.</li>
+        <li><strong>Device and hardware characteristics:</strong> the manufacturer and model of your device, the type of device, the screen dimensions and density, the system language, the time zone, and comparable technical attributes.</li>
+        <li><strong>Operating system and software information:</strong> the name and version of your operating system, the version of the web-rendering component in use, and the identity and version of the Application.</li>
+        <li><strong>Network information:</strong> the type of connection (for instance, Wi-Fi or cellular), the name of the mobile carrier where available, and associated signal or connectivity characteristics.</li>
+        <li><strong>Advertisement interaction and performance data:</strong> records of the advertisements that were requested, delivered, displayed, viewed for a particular duration, clicked, dismissed, or completed, together with timestamps and measurements of viewability.</li>
+        <li><strong>Diagnostic and crash information:</strong> technical logs relating to errors, latency, and the stability of the advertising software, which are used to detect malfunctions and to improve reliability.</li>
+        <li><strong>Cookies, local identifiers, and similar technologies:</strong> small data files or comparable mechanisms that may be placed on, or read from, your device or its embedded web environment, for purposes such as limiting the frequency with which an advertisement is shown, detecting fraudulent activity, and measuring advertising effectiveness.</li>
+      </ul>
+      <h2>6.4 Purposes for which Google may use this information</h2>
+      <p>According to Google's published documentation, the information that is described above may be used by Google to select and to deliver advertisements; to personalize advertisements where you have not opted out and where applicable law has been satisfied; to measure the performance, reach, and frequency of advertisements; to generate aggregated reports for the Developer; to detect, to prevent, and to investigate fraud, abuse, invalid traffic, and security incidents; to diagnose technical problems; and to maintain and to improve Google's products and services.</p>
+      <h2>6.5 Personalized and non-personalized advertising</h2>
+      <p>Advertisements may be personalized, which is to say that they may be selected in part on the basis of your interests and your previous activity, or they may be non-personalized, which is to say that they are selected principally on the basis of contextual signals, such as the content of the application and your approximate location. In certain jurisdictions, personalized advertising is presented only after you have furnished your consent. Please note that even non-personalized advertising may involve the use of cookies or identifiers for functions such as frequency capping, aggregated statistics, and the prevention of fraud and abuse.</p>
+      <h2>6.6 Additional advertising partners</h2>
+      <p>Advertisements that are delivered through Google may be sourced from a multitude of advertisers and from advertising technology partners that participate in Google's marketplace. Such participants may be subject to their own privacy practices. Should we, in the future, introduce supplementary advertising networks or mediation services, we shall revise this Policy to identify them before, or promptly upon, their introduction.</p>
+      <h2>6.7 Further information from Google</h2>
+      <p>For a more detailed exposition of how Google collects and utilizes information, we direct your attention to the following resources, each of which is maintained by Google and not by us:</p>
+      <ul>
+        <li>Google Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a></li>
+        <li>How Google uses information from sites or apps that use its services: <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer">https://policies.google.com/technologies/partner-sites</a></li>
+        <li>How Google uses cookies and advertising technologies: <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">https://policies.google.com/technologies/ads</a></li>
+        <li>Google Ads Settings: <a href="https://adssettings.google.com" target="_blank" rel="noopener noreferrer">https://adssettings.google.com</a></li>
+      </ul>
+
+      <h1>7. Google Fonts and Other Remotely Retrieved Resources</h1>
+      <p>In order to render the Game's typography in the intended manner, the Game requests typeface resources from Google Fonts, which are served from the domains <strong>fonts.googleapis.com</strong> and <strong>fonts.gstatic.com</strong>. Each such request necessarily discloses to Google the IP address of your connection, your browser or web-component user-agent string, the identity of the requested font families, the referring address, and the date and time of the request.</p>
+      <p>According to Google's published documentation, the Google Fonts service does not set cookies in connection with these requests, and the request logs that it retains are used principally for the purposes of operating, securing, and optimizing the service. We nevertheless disclose the existence of this exchange so that you may be fully apprised of every network destination with which the Game communicates.</p>
+      <p>Should these resources prove unreachable, the Game has been designed to substitute fallback typefaces that are available upon your device, and the Game's core functionality will not be impaired by the substitution, although its visual presentation may differ from our intended design.</p>
+      <p>We do not knowingly integrate any additional remote analytics, social-media, or tracking services into the Game. Should we elect to do so in the future, we shall amend this Policy accordingly and, where applicable law so requires, we shall solicit your consent.</p>
+
+      <h1>8. Communications Initiated by You</h1>
+      <p>The Game provides a "Contact Us" function that, when selected, opens your device's default electronic mail application with a pre-addressed message that is directed to our support address. The Game itself does not read, transmit, or store the content of that message; the message is composed, transmitted, and stored by the electronic mail application and the mail service that you have chosen.</p>
+      <p>If you elect to send us a message, whether by electronic mail or by telephone or messaging service, we will necessarily receive the information that you have voluntarily chosen to disclose, which may include your electronic mail address, your name as it appears in your mail account, the content of your message, any attachments that you include, and associated technical headers. We shall use this information solely in order to read, to investigate, and to respond to your inquiry, to resolve reported defects, and to maintain a record of our correspondence.</p>
+      <p>We urge you to refrain from including sensitive information, such as financial credentials, passwords, or government-issued identification numbers, in any message that you send to us, because we neither require nor desire such information in order to provide support for the Game.</p>
+
+      <h1>9. Purposes of Processing and Legal Bases</h1>
+      <h2>9.1 Purposes</h2>
+      <p>The limited information that we ourselves receive or process is employed exclusively for the following purposes: to furnish, to maintain, and to operate the Game; to preserve your progress and preferences on your device; to respond to your inquiries and to furnish technical support; to examine aggregated, non-identifying advertising performance reports that are made available through the AdMob dashboard, such as impression counts, estimated earnings, and country-level or device-category-level statistics, in order to assess the sustainability of the Game; to diagnose and to rectify defects and to improve the quality of the Game; to protect the security and the integrity of the Game; and to comply with obligations that are imposed upon us by applicable law.</p>
+      <h2>9.2 Legal bases for users in the European Economic Area, the United Kingdom, and comparable jurisdictions</h2>
+      <p>Where the data-protection law of your jurisdiction requires that a legal basis be identified for the processing of Personal Data, we rely upon the following bases:</p>
+      <ul>
+        <li><strong>Consent</strong>, in respect of the storage of, or access to, information upon your device for advertising purposes and in respect of the personalization of advertisements, which you may grant or withdraw at any time as described in Section 11.</li>
+        <li><strong>Legitimate interests</strong>, in respect of the delivery of non-personalized advertising, the measurement of aggregated advertising performance, the prevention of fraud and abuse, the maintenance of the security of the Game, and the handling of correspondence, provided that those interests are not overridden by your fundamental rights and freedoms.</li>
+        <li><strong>Performance of a contract</strong>, in respect of the provision of the Game to you in accordance with the terms upon which you have elected to use it.</li>
+        <li><strong>Compliance with a legal obligation</strong>, where we are compelled by law to retain, to disclose, or to otherwise process information.</li>
+      </ul>
+      <p>You are not subject to any decision that is based solely upon automated processing and that produces legal effects concerning you, or similarly significant effects upon you, by reason of the Game's operation.</p>
+
+      <h1>10. Disclosure, Sharing, and Sale of Information</h1>
+      <p>We do not sell the limited information that we ourselves hold. We disclose such information only in the following circumstances, each of which is confined to what is necessary and proportionate:</p>
+      <ul>
+        <li><strong>Service providers and technology partners:</strong> to the extent that the integration of a Third Party's technology, such as Google AdMob or Google Fonts, results in that Third Party receiving information directly from your device, as described in Sections 6 and 7.</li>
+        <li><strong>Legal compulsion and protection of rights:</strong> where disclosure is required by a valid statute, regulation, judicial order, or lawful governmental request, or where disclosure is reasonably necessary to establish, to exercise, or to defend legal claims, to enforce our rights, or to protect the safety, property, and rights of the Developer, our users, or the public.</li>
+        <li><strong>Corporate transactions:</strong> in connection with a merger, acquisition, reorganization, financing, or transfer of all or part of our assets, in which event we shall require the successor to honor the commitments that are set forth in this Policy or we shall afford you notice and an opportunity to object.</li>
+        <li><strong>With your consent or at your direction:</strong> in any other circumstance in which you have expressly authorized the disclosure.</li>
+      </ul>
+      <p>We wish to draw your attention to the fact that, under the laws of certain jurisdictions, including certain states of the United States, the circumstance in which an advertising identifier or comparable information is made available to an advertising partner in order to deliver advertisements that are based upon your activity across different applications or services may be characterized as a "sale" or as "sharing" of personal information, notwithstanding that we receive no monetary payment for the disclosure. To the extent that such characterization applies, you may exercise the opt-out rights that are described in Section 11 and Section 16.</p>
+
+      <h1>11. Consent Management and Your Privacy Choices</h1>
+      <h2>11.1 Consent mechanisms</h2>
+      <p>In regions where applicable law requires that consent be obtained before advertising identifiers are accessed or before personalized advertising is delivered, including the European Economic Area, the United Kingdom, and certain other jurisdictions, the Game may present a consent dialogue that is furnished through Google's consent-management tooling, commonly referred to as the User Messaging Platform. Your selection in that dialogue governs whether personalized advertising is permitted. Where the Game makes available a means of revisiting this selection, you may modify your choice at any time without detriment.</p>
+      <h2>11.2 Device-level controls</h2>
+      <ul>
+        <li><strong>Android:</strong> you may opt out of advertising personalization, or delete your advertising identifier, through your device's system settings, generally located under Settings, then Google, then Ads. Deleting the identifier causes advertisers to receive a zeroed value in its place.</li>
+        <li><strong>iOS and iPadOS:</strong> you may decline or revoke permission for applications to track you through Settings, then Privacy and Security, then Tracking, and you may enable Limit Ad Tracking-equivalent restrictions where your system provides them.</li>
+        <li><strong>Google account controls:</strong> you may manage the personalization of advertisements that are associated with your Google account at <a href="https://adssettings.google.com" target="_blank" rel="noopener noreferrer">https://adssettings.google.com</a>.</li>
+      </ul>
+      <h2>11.3 Industry opt-out tools</h2>
+      <p>You may additionally make use of the consumer opt-out programs that are operated by advertising industry associations, including the Digital Advertising Alliance at <a href="https://optout.aboutads.info" target="_blank" rel="noopener noreferrer">https://optout.aboutads.info</a>, the Network Advertising Initiative at <a href="https://www.networkadvertising.org/choices/" target="_blank" rel="noopener noreferrer">https://www.networkadvertising.org/choices/</a>, and, for users in Europe, Your Online Choices at <a href="https://www.youronlinechoices.eu" target="_blank" rel="noopener noreferrer">https://www.youronlinechoices.eu</a>.</p>
+      <h2>11.4 Consequences of opting out</h2>
+      <p>Opting out of personalized advertising does not eliminate advertisements from the Game. It signifies only that the advertisements that you encounter will be less closely correlated with your presumed interests. Because advertising is integral to the Game's continued availability, the Game cannot, at present, be used entirely free of advertisements.</p>
+      <h2>11.5 Termination of data collection</h2>
+      <p>The most comprehensive means of terminating all further collection of information by the integrated Third Party technologies is to cease using the Game and to uninstall the Application from your device.</p>
+
+      <h1>12. Retention of Information</h1>
+      <p><strong>Locally stored data.</strong> Save-game and preference data that is resident upon your device is retained for as long as it remains upon your device, and it is deleted when you clear the Application's data or uninstall the Application, as described in Section 5.2.</p>
+      <p><strong>Correspondence.</strong> Messages that you send to us, together with any associated information, are retained for such period as is reasonably necessary to resolve your inquiry, to document our dealings with you, and to satisfy our legal, accounting, and dispute-resolution requirements, whereafter they are deleted or irreversibly anonymized.</p>
+      <p><strong>Information held by Third Parties.</strong> Information that is collected by Google through AdMob and Google Fonts is retained in accordance with Google's own retention practices and policies, which we do not control. We refer you to the Google resources that are enumerated in Section 6.7 for additional particulars.</p>
+      <p><strong>Aggregated information.</strong> Statistical information that has been aggregated or anonymized to such an extent that it can no longer be associated with any individual is not subject to the retention limitations that are set forth in this Section.</p>
+
+      <h1>13. International Data Transfers</h1>
+      <p>Google operates a globally distributed infrastructure. Consequently, information that is transmitted from your device in the course of advertising requests and font requests may be processed in, and transferred to, countries other than your country of residence, including countries whose data-protection laws may afford a level of protection that differs from, and may be less extensive than, that which is guaranteed in your own jurisdiction.</p>
+      <p>Where such transfers occur, they are governed by the safeguards that Google maintains, which may include adequacy decisions, standard contractual clauses, and other lawful transfer mechanisms. Our own limited handling of correspondence may likewise involve the transfer of information to the jurisdiction in which the mail service that you or we employ is hosted. By using the Game, you acknowledge that such transfers may occur.</p>
+
+      <h1>14. Security Safeguards</h1>
+      <p>We implement technical and organizational measures that are reasonably designed to protect the information within our control against accidental or unlawful destruction, loss, alteration, unauthorized disclosure, and unauthorized access. Because we deliberately refrain from maintaining user accounts and from storing save games on our servers, the quantity of information that is exposed to such risks is intentionally kept to a minimum.</p>
+      <p>Notwithstanding the foregoing, no method of electronic transmission or electronic storage is entirely impervious to compromise, and we cannot guarantee absolute security. You acknowledge that data stored in the Local Storage of your device is not encrypted by the Game and is only as secure as the device upon which it resides, and that communications with Third Party servers are governed by the security measures that those Third Parties employ.</p>
+
+      <h1>15. Children's Privacy</h1>
+      <p>Fair Life is intended for a general audience and is <strong>not directed toward children under the age of thirteen (13)</strong>, nor toward children who are below the age of digital consent that prevails in their jurisdiction, which may be as high as sixteen (16) years. We do not knowingly solicit or collect Personal Data from children below the applicable age.</p>
+      <p>We observe, however, that the Game integrates a Third Party advertising technology that may automatically collect certain information, such as an advertising identifier or an IP address, from any device upon which the Game is operated, and that we cannot independently ascertain the age of the person who is operating a particular device. Where we determine, or are informed, that a user is a child, or where applicable law so requires, we reserve the right to configure the advertising integration so that the user is treated as a child or as a user who is under the age of consent, which entails the restriction or the disabling of personalized advertising, and we shall take reasonable steps to discontinue any further collection.</p>
+      <p>Pursuant to the laws of certain jurisdictions, including the personal data protection legislation of the Republic of Indonesia, the processing of the personal data of children is subject to heightened requirements, including the necessity of obtaining the consent of a parent or legal guardian. If you are a parent or legal guardian and you believe that a child under your care has furnished information to us, or that information relating to such a child has been transmitted in contravention of this Policy, please contact us through the particulars that are provided in Section 22, and we shall take prompt measures to investigate and, where appropriate, to delete such information that is within our control.</p>
+      <p>We encourage parents and guardians to supervise the online activities of children, to utilize the parental-control and ad-personalization-restriction facilities that are offered by their devices and by Google, and to instruct children never to disclose personal information through any application without permission.</p>
+
+      <h1>16. Your Rights Under Applicable Law</h1>
+      <h2>16.1 General statement</h2>
+      <p>Depending upon your jurisdiction of residence, you may be entitled to exercise certain rights in relation to your Personal Data. We honor these rights to the fullest extent that applicable law requires. It is important to appreciate that, because we do not maintain accounts and do not collect identifying information beyond that which you voluntarily furnish in correspondence, the Personal Data that we are actually in a position to access, correct, or delete is exceedingly limited. In many instances, our proper response to a request will be to confirm that we hold no such data, or to direct you to the Third Party that does.</p>
+      <h2>16.2 Rights under the GDPR and the UK GDPR</h2>
+      <p>If you are located in the European Economic Area or the United Kingdom, you may have the right to: obtain confirmation as to whether your Personal Data is being processed and to access that data; request the rectification of inaccurate or incomplete data; request the erasure of your data in the circumstances that the law prescribes; request the restriction of processing; object to processing that is based upon legitimate interests; receive your data in a structured, commonly used, and machine-readable format and to transmit it to another controller where the law so provides; and withdraw any consent that you have granted, without affecting the lawfulness of processing that was conducted prior to its withdrawal. You further possess the right to lodge a complaint with the competent data-protection supervisory authority of your country of residence, of your place of work, or of the place of the alleged infringement.</p>
+      <h2>16.3 Rights under United States state privacy laws</h2>
+      <p>If you reside in a state that has enacted comprehensive privacy legislation, such as California, you may have the right to: know the categories of Personal Data that have been collected and the purposes for which they are used; access the specific pieces of Personal Data that have been collected; request the deletion and the correction of Personal Data; opt out of the "sale" or "sharing" of Personal Data and of targeted advertising; limit the use of sensitive Personal Data where applicable; and be free from discriminatory treatment for exercising these rights. We do not discriminate against any user who exercises a privacy right.</p>
+      <h2>16.4 Rights under the laws of the Republic of Indonesia</h2>
+      <p>If you are a data subject within the Republic of Indonesia, then in accordance with Law Number 27 of 2022 concerning Personal Data Protection and its implementing regulations, you may have the right to: obtain information regarding the clarity of identity, the basis of legal interest, the purpose of the request, and the accountability of the party that requests your Personal Data; complete, update, and rectify errors or inaccuracies in your Personal Data; obtain access to, and a copy of, your Personal Data; terminate the processing of, erase, and destroy your Personal Data; withdraw your consent; lodge an objection to decisions that are based solely upon automated processing, including profiling, that produce legal consequences or significantly affect you; suspend or restrict processing proportionately to the purpose of processing; sue for and receive redress, and where appropriate compensation, for violations; and obtain and use your Personal Data in a form that is commonly used and readable by a system, where applicable.</p>
+      <h2>16.5 Rights under other legal regimes</h2>
+      <p>Residents of other jurisdictions, including Brazil, Canada, Australia, and the member states of various regional data-protection frameworks, may enjoy rights that are analogous to, or that differ from, those enumerated above. We shall endeavor to honor all rights that you are lawfully entitled to exercise.</p>
+      <h2>16.6 Manner of exercising your rights</h2>
+      <p>To exercise any of the foregoing rights, please transmit your request to the electronic mail address that is stated in Section 22, describing the nature of your request with reasonable particularity. We may require you to furnish information that is adequate to verify your identity and to ascertain that the request concerns Personal Data that is genuinely associated with you, and we may decline requests that are manifestly unfounded, excessive, or otherwise impermissible under applicable law, in which event we shall explain our reasons. We shall respond within the period that is prescribed by applicable law.</p>
+      <h2>16.7 Rights exercisable against Google</h2>
+      <p>With respect to information that Google collects and controls through AdMob and Google Fonts, you may exercise your rights directly against Google through the tools and procedures that are described in the Google resources listed in Section 6.7, including the Google Ads Settings page.</p>
+
+      <h1>17. Third-Party Links, Services, and Platforms</h1>
+      <p>This Policy, the Game, and the support channels that we furnish contain references and hyperlinks to Third Party resources, including Google's policy pages, industry opt-out portals, electronic mail services, and the WhatsApp messaging platform. We neither operate nor control these resources, and we assume no responsibility for their content, their security, or their privacy practices. Your use of any such resource is governed exclusively by the terms and policies of its operator, and we exhort you to review them. In particular, if you elect to contact us through WhatsApp, your communication will be subject to the privacy practices of that platform and of its operator.</p>
+      <p>Furthermore, the distribution platform from which you obtained the Application, such as an application marketplace, independently collects information about your download and use of the Application in accordance with its own privacy policy, and we have no control over that collection.</p>
+
+      <h1>18. Do Not Track and Global Privacy Control</h1>
+      <p>Because there is, at present, no uniform technical or legal standard governing the interpretation of "Do Not Track" browser signals, the Game does not respond to such signals. We nevertheless respect the device-level advertising-personalization restrictions and the consent determinations that are communicated to the AdMob software development kit, and, where a recognized opt-out preference signal such as Global Privacy Control is made available to the Game by your platform, we shall honor it to the extent that applicable law requires and that technical feasibility permits.</p>
+
+      <h1>19. Personal Data Breach Notification</h1>
+      <p>In the improbable event that a breach of security results in the accidental or unlawful destruction, loss, alteration, unauthorized disclosure of, or access to Personal Data that is within our control, and where the breach is likely to result in a risk to your rights and freedoms, we shall notify the competent supervisory authorities and the affected individuals within the periods and in the manner that applicable law prescribes. Because we hold very little Personal Data, we regard the likelihood of such an incident as remote.</p>
+
+      <h1>20. Applicable Law</h1>
+      <p>This Policy, and any dispute that arises in connection with it, shall be construed and governed in accordance with the laws of the Republic of Indonesia, without regard to its conflict-of-laws principles, and without prejudice to any mandatory consumer-protection or data-protection provisions of the jurisdiction in which you reside that cannot lawfully be waived or displaced by agreement.</p>
+
+      <h1>21. Changes to This Privacy Policy</h1>
+      <p>We may revise this Policy from time to time in order to reflect modifications to the Game, to the Third Party technologies that it incorporates, to our practices, or to applicable law. The prevailing version shall at all times be published on this page, and the "Effective Date and Last Updated" notation at the head of this page shall be amended whenever a revision is promulgated.</p>
+      <p>Where a revision is material, such as the introduction of an additional advertising network or a new category of data collection, we shall endeavor to furnish prominent notice, which may take the form of an in-application notification or of a conspicuous notice upon this page. Where applicable law requires that we obtain your fresh consent for a particular change, we shall solicit it before the change takes effect.</p>
+      <p>Your continued use of the Game after a revision has taken effect constitutes your acknowledgment of the revised Policy, subject to any rights that you may possess under applicable law. We recommend that you consult this page periodically.</p>
 
       <div class="warning-box">
-        &#9888;&#65039; Fair Life runs fully offline, even on the very first launch, and does not collect, transmit, or share any personal data from your device.
+        <p>&#9888;&#65039; <strong>Important notice.</strong> Fair Life requires an active internet connection and displays advertisements that are delivered by Google AdMob.</p>
+        <p>In the course of delivering those advertisements, Google may automatically collect information from your device, such as your advertising identifier, your IP address, and technical and ad-interaction data, as described in Section 6.</p>
+        <p>We do not require an account, we do not operate our own gameplay analytics, we do not sell your information, and your save games remain exclusively on your own device. You may restrict ad personalization at any time through the controls that are described in Section 11.</p>
       </div>
 
-      <h1>5. Contact</h1>
-      <p>If you have any questions regarding this Privacy Policy, please contact:</p>
+      <h1>22. Contact</h1>
+      <p>Should you have any question, concern, complaint, or request regarding this Privacy Policy, regarding our data practices, or regarding the exercise of any right that is described herein, please do not hesitate to communicate with us through either of the following channels:</p>
       <ul>
-        <li>Email: <a href="mailto:a.creep.games@gmail.com">a.creep.games@gmail.com</a></li>
-        <li>No. Tlp: <a href="https://wa.me/6285126425954">+62 851-2642-5954</a></li>
+        <li>Email: <a href="mailto:nicefox.gd@gmail.com">nicefox.gd@gmail.com</a></li>
+        <li>Telephone / WhatsApp: <a href="https://wa.me/6285126425954">+62 851-2642-5954</a></li>
       </ul>
+      <p>The "Contact Us" button that appears upon the title screen of the Game opens a message that is addressed to the same electronic mail address. We shall endeavor to acknowledge and to resolve every legitimate inquiry within a reasonable period, and in any event within the period that is prescribed by applicable law.</p>
 
       <button class="btn-close-window" onclick="window.close()">CLOSE WINDOW</button>
     </div>
@@ -197,39 +398,207 @@ strong { color: #10263e; }
     <div class="lang-id" style="display:none;">
       <div class="header-title">KEBIJAKAN PRIVASI</div>
       <div class="header-subtitle">Fair Life - A Creep Games</div>
+      <div class="meta-line">Tanggal Berlaku dan Terakhir Diperbarui: 17 Oktober 2026</div>
 
-      <h1>1. Ketentuan Koneksi Internet</h1>
-      <p>Berbeda dengan judul kami lainnya, Fair Life adalah game <strong>100% offline</strong> dan tidak memerlukan koneksi internet kapan pun, bahkan di awal login sekalipun. Anda dapat memainkan Fair Life sepenuhnya tanpa koneksi internet sejak peluncuran pertama.</p>
+      <h1>1. Pendahuluan, Ruang Lingkup, dan Persetujuan</h1>
+      <p>Kebijakan Privasi ini (selanjutnya disebut "Kebijakan") merupakan uraian yang komprehensif dan otoritatif mengenai cara A Creep Games (selanjutnya disebut "kami" atau "Pengembang") mengumpulkan, menerima, memanfaatkan, mengungkapkan, menyimpan, dan melindungi informasi sehubungan dengan aplikasi hiburan interaktif bernama Fair Life (selanjutnya disebut "Fair Life," "Game," atau "Aplikasi").</p>
+      <p>Dengan mengunduh, memasang, menjalankan, atau dengan cara lain mengakses Game, Anda menegaskan bahwa Anda telah membaca Kebijakan ini secara menyeluruh, bahwa Anda telah memahami isinya, dan bahwa Anda menyetujui praktik-praktik yang diuraikan di dalamnya. Apabila Anda tidak dapat menyepakati ketentuan apa pun dalam Kebijakan ini, kami dengan hormat meminta Anda untuk tidak menggunakan Game dan menghapusnya dari perangkat Anda.</p>
+      <p>Kebijakan ini berlaku secara eksklusif terhadap Game serta komunikasi yang Anda pilih untuk mulai lakukan dengan kami terkait Game. Kebijakan ini tidak berlaku bagi situs web, aplikasi, platform, atau layanan apa pun yang dioperasikan oleh pihak ketiga, bahkan apabila Game memuat tautan atau integrasi menuju layanan pihak ketiga tersebut. Kami menganjurkan Anda untuk mencermati pernyataan privasi setiap pihak ketiga yang berinteraksi dengan Anda.</p>
+      <p>Kami telah berupaya menyusun Kebijakan ini dalam bahasa yang setepat dan selengkap yang secara wajar dapat dilakukan, agar Anda dapat mengambil keputusan yang sepenuhnya terinformasi mengenai apakah dan bagaimana Anda hendak menggunakan Game. Apabila suatu ketentuan dalam Kebijakan ini disajikan dalam lebih dari satu bahasa, maka teks berbahasa Inggris dianggap sebagai versi yang berwibawa apabila terdapat perbedaan penafsiran.</p>
 
-      <h1>2. Data yang Kami Kumpulkan</h1>
-      <p>Fair Life tidak meminta data pribadi apa pun.</p>
+      <h1>2. Persyaratan Konektivitas Internet</h1>
+      <p>Rilis Fair Life terdahulu dirancang untuk beroperasi sepenuhnya tanpa koneksi jaringan. Rilis Game saat ini berbeda secara material dalam hal tersebut: <strong>Fair Life kini memerlukan koneksi internet yang aktif agar dapat berfungsi.</strong> Oleh karena itu, Anda tidak akan dapat menikmati pengalaman Game secara utuh selama perangkat Anda tidak terhubung ke internet.</p>
+      <p>Persyaratan ini timbul terutama karena konten iklan diambil dari server jarak jauh secara waktu nyata setiap kali Game memintanya, dan karena sejumlah sumber daya presentasional tertentu, seperti aset tipografi, juga diambil dari server jarak jauh dan tidak dikemas secara eksklusif di dalam Aplikasi itu sendiri.</p>
+      <p>Sebagai konsekuensi yang inheren dan tidak terelakkan dari cara kerja komunikasi internet, setiap permintaan jaringan yang dikirim oleh perangkat Anda mengungkapkan, sekurang-kurangnya, alamat protokol internet (IP) yang ditetapkan untuk koneksi Anda, beserta metadata teknis tertentu yang diperlukan agar server penerima dapat mengembalikan tanggapan. Pengungkapan ini bukan fitur yang kami perkenalkan demi keuntungan kami sendiri; hal ini merupakan karakteristik struktural dari seluruh komunikasi berbasis internet.</p>
+      <p>Anda bertanggung jawab sepenuhnya atas biaya apa pun yang mungkin dikenakan oleh operator seluler, penyedia layanan internet, atau paket data Anda sehubungan dengan data yang dikirim dan diterima oleh Game. Kami menyarankan agar Anda menggunakan koneksi tanpa batas kuota, seperti jaringan Wi-Fi tepercaya, apabila Anda khawatir terhadap konsumsi data.</p>
+      <p>Kami tidak menjamin bahwa koneksi internet Anda akan tetap berkesinambungan, tidak terputus, atau bebas dari galat, dan kami tidak dapat dimintai pertanggungjawaban atas ketidakmampuan menggunakan Game yang diakibatkan oleh ketidaktersediaan, ketidakstabilan, atau degradasi koneksi jaringan Anda maupun server jarak jauh mana pun yang menjadi tumpuan Game.</p>
+
+      <h1>3. Definisi</h1>
+      <p>Untuk keperluan Kebijakan ini, ungkapan-ungkapan berikut memiliki makna sebagaimana yang dilekatkan pada masing-masing di bawah ini:</p>
       <ul>
-        <li>Tidak perlu mendaftar akun.</li>
-        <li>Tidak perlu login akun.</li>
-        <li>Tidak mengambil data apa pun dari aplikasi Fair Life, seperti save game pemain, karena save game menggunakan local storage pada perangkat pemain.</li>
-        <li>Tidak ada analitik gameplay.</li>
-        <li>Tidak mengambil aktivitas apa pun dari aplikasi.</li>
-        <li>Tidak menampilkan iklan pihak ketiga.</li>
-        <li>Tidak menjual atau membagikan data pengguna.</li>
+        <li><strong>"Data Pribadi"</strong> berarti setiap informasi yang berkaitan dengan orang perseorangan yang teridentifikasi atau dapat diidentifikasi, termasuk, sepanjang hukum yang berlaku menentukan demikian, pengenal daring seperti pengenal periklanan atau alamat IP.</li>
+        <li><strong>"Pemrosesan"</strong> berarti setiap operasi atau rangkaian operasi yang dilakukan terhadap informasi, baik dengan maupun tanpa sarana otomatis, termasuk pengumpulan, perekaman, pengorganisasian, penyimpanan, adaptasi, pengambilan kembali, konsultasi, penggunaan, pengungkapan, pengiriman, pembatasan, penghapusan, atau pemusnahan.</li>
+        <li><strong>"Pengenal Periklanan"</strong> berarti rangkaian alfanumerik pseudonim yang dapat diatur ulang dan dikendalikan oleh pengguna, yang ditetapkan pada suatu perangkat seluler oleh sistem operasinya untuk keperluan periklanan dan analitik, seperti Android Advertising ID (AAID) atau Identifier for Advertisers (IDFA).</li>
+        <li><strong>"Google AdMob"</strong> atau <strong>"AdMob"</strong> berarti platform periklanan seluler dan kit pengembangan perangkat lunak yang dioperasikan dan disediakan oleh Google LLC, beserta entitas afiliasinya, termasuk Google Ireland Limited sepanjang berlaku.</li>
+        <li><strong>"Penyimpanan Lokal"</strong> berarti mekanisme penyimpanan yang berada pada perangkat Anda sendiri, yang memungkinkan Game menyimpan data antarsesi tanpa mengirimkan data tersebut ke server jarak jauh mana pun.</li>
+        <li><strong>"Pihak Ketiga"</strong> berarti setiap orang perseorangan atau badan hukum selain Anda dan Pengembang.</li>
       </ul>
-      <p>Setiap aksi yang memengaruhi probabilitas terjadinya sesuatu dalam game merupakan kode statis yang memiliki banyak cabang untuk berbagai kemungkinan.</p>
 
-      <h1>3. Privasi Anak</h1>
-      <p>Karena Fair Life tidak mengumpulkan informasi pribadi apa pun, tidak ada data pribadi anak-anak yang dikumpulkan atau diproses.</p>
+      <h1>4. Informasi yang Tidak Kami Kumpulkan Secara Langsung</h1>
+      <p>Fair Life telah dirancang dengan maksud yang disengaja untuk meminimalkan jumlah informasi yang kami kumpulkan sendiri. Kami ingin menyatakan, sejelas yang dimungkinkan oleh bahasa Indonesia, kategori informasi yang <strong>tidak</strong> kami kumpulkan atau kelola pada server maupun sistem kami sendiri.</p>
+      <ul>
+        <li>Kami tidak mewajibkan Anda mendaftarkan akun, membuat profil, atau menyediakan nama pengguna, kata sandi, maupun kredensial lainnya.</li>
+        <li>Kami tidak mewajibkan Anda masuk ke akun apa pun, baik yang dikelola oleh kami maupun yang dikelola oleh Pihak Ketiga.</li>
+        <li>Kami tidak meminta, dan tidak menyimpan, nama Anda, alamat surat Anda, nomor telepon Anda, tanggal lahir Anda, tanda pengenal yang diterbitkan pemerintah, ataupun atribut sejenis yang menyangkut identitas sipil Anda.</li>
+        <li>Kami tidak mengumpulkan, memproses, atau menyimpan rincian kartu pembayaran, kredensial perbankan, maupun instrumen keuangan lainnya, sebab Game ini tidak, pada Tanggal Berlaku Kebijakan ini, menawarkan pembelian apa pun yang diproses oleh kami.</li>
+        <li>Kami tidak mengoperasikan analitik permainan pihak pertama, pemrofilan perilaku, ataupun layanan telemetri yang mencatat keputusan yang Anda ambil atau cara Anda bermain.</li>
+        <li>Kami tidak mengirimkan data simpanan permainan (save game) Anda ke server mana pun yang kami operasikan. Data simpanan permainan berada secara eksklusif di dalam Penyimpanan Lokal perangkat Anda.</li>
+        <li>Sebagai bagian dari rancangan, kami tidak meminta akses ke kontak, kamera, mikrofon, foto, isi layanan pesan singkat (SMS), catatan panggilan, atau lokasi geografis presisi Anda.</li>
+        <li>Kami tidak menyusun profil periklanan, dan kami tidak menjual, menyewakan, mengalihsewakan, atau menukarkan Data Pribadi apa pun sebagai imbalan uang maupun imbalan bernilai lainnya.</li>
+      </ul>
+      <p>Hasil kejadian dalam permainan yang diatur oleh probabilitas ditentukan oleh logika program statis yang dieksekusi secara lokal pada perangkat Anda sendiri, yang terdiri dari banyak percabangan kondisional yang bersesuaian dengan banyak kemungkinan hasil. Logika tersebut tidak bergantung pada, dan tidak menghasilkan, profil sisi server apa pun mengenai identitas maupun perilaku Anda.</p>
+      <p>Pernyataan-pernyataan di atas menggambarkan informasi yang dikumpulkan oleh <em>kami</em>. Pernyataan tersebut harus dibaca bersama dengan Bagian 6 dan Bagian 7 Kebijakan ini, yang menguraikan informasi yang dikumpulkan oleh Pihak Ketiga yang teknologinya terintegrasi dalam Game, dan yang tentu saja membatasi sifat minimal dari praktik data kami sendiri.</p>
 
-      <h1>4. Perubahan Kebijakan Privasi</h1>
-      <p>Jika Kebijakan Privasi ini diperbarui di masa mendatang, versi terbaru akan dipublikasikan pada halaman ini dengan tanggal "Terakhir diperbarui" yang direvisi.</p>
+      <h1>5. Data yang Disimpan Secara Lokal, Penyimpanan Lokal, dan Teknologi Serupa</h1>
+      <h2>5.1 Data yang disimpan pada perangkat Anda</h2>
+      <p>Agar Anda dapat melanjutkan kemajuan dan menyimpan preferensi Anda, Game menulis data tertentu ke Penyimpanan Lokal perangkat Anda. Data ini dapat mencakup, tanpa pembatasan, kemajuan simpanan permainan Anda, keadaan karakter dan keuangan dalam permainan Anda, serta preferensi tampilan dan antarmuka Anda, seperti bahasa yang dipilih, kualitas grafis, tingkat resolusi, batas kecepatan bingkai, dan keterlihatan elemen antarmuka.</p>
+      <p>Data ini disimpan dalam bentuk polos tanpa enkripsi di dalam area penyimpanan yang dialokasikan bagi Aplikasi atau bagi lingkungan web tertanamnya oleh sistem operasi Anda. Data tersebut dibuat, dibaca, diubah, dan dihapus secara eksklusif oleh Game yang berjalan pada perangkat Anda sendiri, dan tidak dikirimkan kepada kami.</p>
+      <h2>5.2 Kendali Anda atas data yang disimpan secara lokal</h2>
+      <p>Anda dapat menghapus data ini kapan saja dengan membersihkan data tersimpan Aplikasi melalui pengaturan sistem perangkat Anda, dengan membersihkan data situs pada peramban yang relevan apabila Anda mengakses Game melalui peramban, atau dengan mencopot pemasangan Aplikasi. Mohon dipahami bahwa penghapusan bersifat tidak dapat dibatalkan, dan kami tidak akan dapat memulihkan kemajuan Anda karena kami tidak memiliki salinannya.</p>
+      <h2>5.3 Tanggung jawab atas keamanan perangkat</h2>
+      <p>Karena data ini berada pada perangkat Anda dan tidak dienkripsi oleh Game, kerahasiaannya bergantung pada keamanan perangkat itu sendiri. Anda bertanggung jawab untuk melindungi perangkat Anda melalui langkah-langkah yang layak, seperti kunci layar, serta untuk berhati-hati ketika berbagi perangkat dengan orang lain atau ketika mengoperasikan perangkat yang pembatasan keamanannya telah sengaja dihilangkan.</p>
+      <h2>5.4 Klasifikasi penyimpanan ini</h2>
+      <p>Penyimpanan Lokal yang diuraikan dalam Bagian ini digunakan semata-mata untuk menyediakan fungsionalitas yang telah Anda minta secara afirmatif, yaitu penyimpanan kemajuan dan pengaturan Anda. Kami menganggapnya sangat diperlukan bagi pengoperasian Game, dan kami tidak menggunakannya untuk melacak Anda lintas aplikasi atau situs web.</p>
+
+      <h1>6. Periklanan dan Google AdMob</h1>
+      <h2>6.1 Keberadaan periklanan pihak ketiga</h2>
+      <p>Game ini didukung oleh periklanan. Rilis saat ini mengintegrasikan kit pengembangan perangkat lunak Google AdMob untuk mengambil dan menampilkan iklan, yang dapat disajikan dalam berbagai format, termasuk spanduk (banner), sela (interstitial), berhadiah (rewarded), native, dan format lain yang dapat kami pilih untuk diterapkan dari waktu ke waktu. Hal ini merupakan penyimpangan material dari rilis terdahulu, yang sama sekali tidak menampilkan iklan.</p>
+      <h2>6.2 Peran Google</h2>
+      <p>Ketika suatu iklan diminta, perangkat Anda berkomunikasi secara langsung dengan server yang dioperasikan oleh Google. Google menentukan iklan mana yang akan disampaikan, mencatat apakah iklan tersebut ditampilkan atau diinteraksikan, dan memproses informasi terkait sesuai dengan kebijakan privasinya sendiri dan kebijakan periklanannya sendiri. Berkenaan dengan aspek tertentu dari pemrosesan ini, Google dapat bertindak sebagai pengendali data yang independen dan bukan sebagai prosesor yang bertindak atas instruksi kami, dan kami tidak menjalankan kendali atas aspek-aspek tersebut.</p>
+      <h2>6.3 Kategori informasi yang dapat dikumpulkan oleh AdMob</h2>
+      <p>Kit pengembangan perangkat lunak AdMob, beserta server Google yang berkomunikasi dengannya, dapat secara otomatis mengumpulkan, menerima, dan memproses kategori informasi berikut dari atau mengenai perangkat Anda. Informasi spesifik yang dikumpulkan dapat bervariasi sesuai dengan perangkat Anda, sistem operasi Anda, wilayah Anda, dan pilihan persetujuan yang telah Anda buat.</p>
+      <ul>
+        <li><strong>Pengenal Periklanan:</strong> Android Advertising ID (AAID), Identifier for Advertisers (IDFA) pada iOS, atau pengenal setara yang dapat diatur ulang, sepanjang perangkat dan pengaturan Anda mengizinkan penggunaannya.</li>
+        <li><strong>Alamat IP dan lokasi perkiraan:</strong> alamat IP koneksi Anda, yang darinya lokasi geografis perkiraan yang kasar (seperti negara, wilayah, atau kota) dapat disimpulkan. Game tidak meminta akses ke lokasi GPS presisi Anda.</li>
+        <li><strong>Karakteristik perangkat dan perangkat keras:</strong> produsen dan model perangkat Anda, jenis perangkat, dimensi dan kerapatan layar, bahasa sistem, zona waktu, dan atribut teknis sebanding lainnya.</li>
+        <li><strong>Informasi sistem operasi dan perangkat lunak:</strong> nama dan versi sistem operasi Anda, versi komponen perenderan web yang digunakan, serta identitas dan versi Aplikasi.</li>
+        <li><strong>Informasi jaringan:</strong> jenis koneksi (misalnya Wi-Fi atau seluler), nama operator seluler apabila tersedia, serta karakteristik sinyal atau konektivitas yang terkait.</li>
+        <li><strong>Data interaksi dan kinerja iklan:</strong> catatan mengenai iklan yang diminta, disampaikan, ditampilkan, dilihat selama durasi tertentu, diklik, ditutup, atau diselesaikan, beserta stempel waktu dan pengukuran keterlihatan (viewability).</li>
+        <li><strong>Informasi diagnostik dan kerusakan:</strong> log teknis yang berkaitan dengan galat, latensi, dan stabilitas perangkat lunak periklanan, yang digunakan untuk mendeteksi malafungsi dan meningkatkan keandalan.</li>
+        <li><strong>Kuki, pengenal lokal, dan teknologi serupa:</strong> berkas data kecil atau mekanisme sebanding yang dapat ditempatkan pada, atau dibaca dari, perangkat Anda atau lingkungan web tertanamnya, untuk keperluan seperti membatasi frekuensi penayangan suatu iklan, mendeteksi aktivitas curang, dan mengukur efektivitas periklanan.</li>
+      </ul>
+      <h2>6.4 Tujuan penggunaan informasi ini oleh Google</h2>
+      <p>Menurut dokumentasi yang dipublikasikan oleh Google, informasi yang diuraikan di atas dapat digunakan oleh Google untuk memilih dan menyampaikan iklan; mempersonalisasi iklan sepanjang Anda tidak menolaknya dan sepanjang hukum yang berlaku telah dipenuhi; mengukur kinerja, jangkauan, dan frekuensi iklan; menghasilkan laporan agregat bagi Pengembang; mendeteksi, mencegah, dan menyelidiki penipuan, penyalahgunaan, lalu lintas tidak valid, dan insiden keamanan; mendiagnosis masalah teknis; serta memelihara dan meningkatkan produk dan layanan Google.</p>
+      <h2>6.5 Iklan yang dipersonalisasi dan tidak dipersonalisasi</h2>
+      <p>Iklan dapat dipersonalisasi, yakni dapat dipilih sebagian berdasarkan minat dan aktivitas Anda sebelumnya, atau dapat tidak dipersonalisasi, yakni dipilih terutama berdasarkan sinyal kontekstual, seperti konten aplikasi dan lokasi perkiraan Anda. Di yurisdiksi tertentu, iklan yang dipersonalisasi hanya disajikan setelah Anda memberikan persetujuan. Mohon dicatat bahwa bahkan iklan yang tidak dipersonalisasi dapat melibatkan penggunaan kuki atau pengenal untuk fungsi seperti pembatasan frekuensi, statistik agregat, serta pencegahan penipuan dan penyalahgunaan.</p>
+      <h2>6.6 Mitra periklanan tambahan</h2>
+      <p>Iklan yang disampaikan melalui Google dapat bersumber dari banyak pengiklan dan dari mitra teknologi periklanan yang berpartisipasi dalam pasar Google. Para peserta tersebut dapat tunduk pada praktik privasinya masing-masing. Apabila di kemudian hari kami memperkenalkan jaringan iklan atau layanan mediasi tambahan, kami akan merevisi Kebijakan ini untuk mengidentifikasinya sebelum, atau segera setelah, pengenalannya.</p>
+      <h2>6.7 Informasi lebih lanjut dari Google</h2>
+      <p>Untuk uraian yang lebih rinci mengenai cara Google mengumpulkan dan memanfaatkan informasi, kami mengarahkan perhatian Anda pada sumber daya berikut, yang masing-masing dikelola oleh Google dan bukan oleh kami:</p>
+      <ul>
+        <li>Kebijakan Privasi Google: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a></li>
+        <li>Cara Google menggunakan informasi dari situs atau aplikasi yang menggunakan layanannya: <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer">https://policies.google.com/technologies/partner-sites</a></li>
+        <li>Cara Google menggunakan kuki dan teknologi periklanan: <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">https://policies.google.com/technologies/ads</a></li>
+        <li>Pengaturan Iklan Google: <a href="https://adssettings.google.com" target="_blank" rel="noopener noreferrer">https://adssettings.google.com</a></li>
+      </ul>
+
+      <h1>7. Google Fonts dan Sumber Daya Lain yang Diambil dari Jarak Jauh</h1>
+      <p>Agar tipografi Game dapat dirender sebagaimana dimaksudkan, Game meminta sumber daya jenis huruf dari Google Fonts, yang disajikan dari domain <strong>fonts.googleapis.com</strong> dan <strong>fonts.gstatic.com</strong>. Setiap permintaan semacam itu tentu mengungkapkan kepada Google alamat IP koneksi Anda, string user-agent peramban atau komponen web Anda, identitas keluarga huruf yang diminta, alamat perujuk, serta tanggal dan waktu permintaan.</p>
+      <p>Menurut dokumentasi yang dipublikasikan oleh Google, layanan Google Fonts tidak menetapkan kuki sehubungan dengan permintaan ini, dan log permintaan yang disimpannya digunakan terutama untuk keperluan mengoperasikan, mengamankan, dan mengoptimalkan layanan. Kendati demikian, kami mengungkapkan keberadaan pertukaran ini agar Anda dapat mengetahui sepenuhnya setiap tujuan jaringan yang berkomunikasi dengan Game.</p>
+      <p>Apabila sumber daya ini tidak dapat dijangkau, Game telah dirancang untuk mengganti dengan jenis huruf cadangan yang tersedia pada perangkat Anda, dan fungsionalitas inti Game tidak akan terganggu oleh penggantian tersebut, meskipun tampilan visualnya dapat berbeda dari rancangan yang kami maksudkan.</p>
+      <p>Kami tidak dengan sengaja mengintegrasikan layanan analitik jarak jauh, media sosial, atau pelacakan tambahan apa pun ke dalam Game. Apabila kami memilih untuk melakukannya di masa mendatang, kami akan mengubah Kebijakan ini sebagaimana mestinya dan, sepanjang hukum yang berlaku mensyaratkan, kami akan meminta persetujuan Anda.</p>
+
+      <h1>8. Komunikasi yang Diprakarsai oleh Anda</h1>
+      <p>Game menyediakan fungsi "Hubungi Kami" yang, apabila dipilih, membuka aplikasi surat elektronik bawaan perangkat Anda dengan pesan yang telah beralamat ke alamat dukungan kami. Game itu sendiri tidak membaca, mengirimkan, atau menyimpan isi pesan tersebut; pesan disusun, dikirimkan, dan disimpan oleh aplikasi surat elektronik dan layanan surat yang telah Anda pilih.</p>
+      <p>Apabila Anda memilih untuk mengirimkan pesan kepada kami, baik melalui surat elektronik maupun melalui layanan telepon atau pesan, kami tentu akan menerima informasi yang secara sukarela Anda pilih untuk diungkapkan, yang dapat mencakup alamat surat elektronik Anda, nama Anda sebagaimana tercantum dalam akun surat Anda, isi pesan Anda, lampiran apa pun yang Anda sertakan, serta header teknis yang terkait. Kami akan menggunakan informasi ini semata-mata untuk membaca, menyelidiki, dan menanggapi pertanyaan Anda, menyelesaikan cacat yang dilaporkan, dan memelihara catatan korespondensi kami.</p>
+      <p>Kami menganjurkan Anda dengan sangat untuk tidak mencantumkan informasi sensitif, seperti kredensial keuangan, kata sandi, atau nomor tanda pengenal yang diterbitkan pemerintah, dalam pesan apa pun yang Anda kirimkan kepada kami, karena kami tidak memerlukan maupun menghendaki informasi semacam itu untuk menyediakan dukungan bagi Game.</p>
+
+      <h1>9. Tujuan Pemrosesan dan Dasar Hukum</h1>
+      <h2>9.1 Tujuan</h2>
+      <p>Informasi terbatas yang kami terima atau proses sendiri digunakan secara eksklusif untuk tujuan berikut: menyediakan, memelihara, dan mengoperasikan Game; menyimpan kemajuan dan preferensi Anda pada perangkat Anda; menanggapi pertanyaan Anda dan menyediakan dukungan teknis; menelaah laporan kinerja iklan agregat yang tidak mengidentifikasi individu dan tersedia melalui dasbor AdMob, seperti jumlah tayangan, estimasi pendapatan, dan statistik tingkat negara atau kategori perangkat, guna menilai keberlanjutan Game; mendiagnosis dan memperbaiki cacat serta meningkatkan mutu Game; melindungi keamanan dan integritas Game; dan memenuhi kewajiban yang dibebankan kepada kami oleh hukum yang berlaku.</p>
+      <h2>9.2 Dasar hukum bagi pengguna di Wilayah Ekonomi Eropa, Britania Raya, dan yurisdiksi sebanding</h2>
+      <p>Apabila hukum pelindungan data di yurisdiksi Anda mensyaratkan agar suatu dasar hukum diidentifikasi untuk pemrosesan Data Pribadi, kami mengandalkan dasar-dasar berikut:</p>
+      <ul>
+        <li><strong>Persetujuan</strong>, sehubungan dengan penyimpanan atau akses informasi pada perangkat Anda untuk keperluan periklanan dan sehubungan dengan personalisasi iklan, yang dapat Anda berikan atau tarik kembali kapan saja sebagaimana diuraikan dalam Bagian 11.</li>
+        <li><strong>Kepentingan yang sah</strong>, sehubungan dengan penyampaian iklan yang tidak dipersonalisasi, pengukuran kinerja iklan agregat, pencegahan penipuan dan penyalahgunaan, pemeliharaan keamanan Game, dan penanganan korespondensi, sepanjang kepentingan tersebut tidak dikesampingkan oleh hak dan kebebasan fundamental Anda.</li>
+        <li><strong>Pelaksanaan suatu perjanjian</strong>, sehubungan dengan penyediaan Game kepada Anda sesuai dengan ketentuan yang mendasari pilihan Anda untuk menggunakannya.</li>
+        <li><strong>Pemenuhan kewajiban hukum</strong>, apabila kami diharuskan oleh hukum untuk menyimpan, mengungkapkan, atau dengan cara lain memproses informasi.</li>
+      </ul>
+      <p>Anda tidak tunduk pada keputusan apa pun yang semata-mata didasarkan pada pemrosesan otomatis dan yang menimbulkan akibat hukum bagi Anda, atau akibat serupa yang signifikan terhadap Anda, sebagai akibat dari pengoperasian Game.</p>
+
+      <h1>10. Pengungkapan, Pembagian, dan Penjualan Informasi</h1>
+      <p>Kami tidak menjual informasi terbatas yang kami pegang sendiri. Kami mengungkapkan informasi tersebut hanya dalam keadaan berikut, yang masing-masing dibatasi pada hal yang diperlukan dan proporsional:</p>
+      <ul>
+        <li><strong>Penyedia layanan dan mitra teknologi:</strong> sejauh integrasi teknologi suatu Pihak Ketiga, seperti Google AdMob atau Google Fonts, mengakibatkan Pihak Ketiga tersebut menerima informasi secara langsung dari perangkat Anda, sebagaimana diuraikan dalam Bagian 6 dan 7.</li>
+        <li><strong>Kewajiban hukum dan pelindungan hak:</strong> apabila pengungkapan diwajibkan oleh undang-undang, peraturan, putusan pengadilan, atau permintaan pemerintah yang sah, atau apabila pengungkapan secara wajar diperlukan untuk menetapkan, menjalankan, atau membela tuntutan hukum, menegakkan hak kami, atau melindungi keselamatan, harta benda, dan hak Pengembang, pengguna kami, atau masyarakat.</li>
+        <li><strong>Transaksi korporasi:</strong> sehubungan dengan penggabungan, akuisisi, reorganisasi, pembiayaan, atau pengalihan seluruh atau sebagian aset kami, dalam hal mana kami akan mewajibkan penerus untuk menghormati komitmen yang tercantum dalam Kebijakan ini atau kami akan memberikan pemberitahuan dan kesempatan untuk berkeberatan kepada Anda.</li>
+        <li><strong>Dengan persetujuan Anda atau atas arahan Anda:</strong> dalam keadaan lain mana pun ketika Anda telah secara tegas memberikan kuasa atas pengungkapan tersebut.</li>
+      </ul>
+      <p>Kami ingin menarik perhatian Anda pada kenyataan bahwa, menurut hukum yurisdiksi tertentu, termasuk negara bagian tertentu di Amerika Serikat, keadaan ketika pengenal periklanan atau informasi sejenis disediakan bagi mitra periklanan untuk menyampaikan iklan yang didasarkan pada aktivitas Anda lintas aplikasi atau layanan dapat dikategorikan sebagai "penjualan" atau "pembagian" informasi pribadi, meskipun kami tidak menerima pembayaran uang atas pengungkapan tersebut. Sepanjang kategorisasi demikian berlaku, Anda dapat menggunakan hak menolak (opt-out) yang diuraikan dalam Bagian 11 dan Bagian 16.</p>
+
+      <h1>11. Pengelolaan Persetujuan dan Pilihan Privasi Anda</h1>
+      <h2>11.1 Mekanisme persetujuan</h2>
+      <p>Di wilayah yang hukum berlakunya mensyaratkan agar persetujuan diperoleh sebelum pengenal periklanan diakses atau sebelum iklan yang dipersonalisasi disampaikan, termasuk Wilayah Ekonomi Eropa, Britania Raya, dan yurisdiksi tertentu lainnya, Game dapat menampilkan dialog persetujuan yang disediakan melalui perangkat pengelolaan persetujuan milik Google, yang lazim disebut User Messaging Platform. Pilihan Anda dalam dialog tersebut menentukan apakah iklan yang dipersonalisasi diperkenankan. Apabila Game menyediakan sarana untuk meninjau kembali pilihan ini, Anda dapat mengubah pilihan Anda kapan saja tanpa kerugian apa pun.</p>
+      <h2>11.2 Kendali tingkat perangkat</h2>
+      <ul>
+        <li><strong>Android:</strong> Anda dapat menolak personalisasi iklan, atau menghapus pengenal periklanan Anda, melalui pengaturan sistem perangkat Anda, yang umumnya terletak di bawah Setelan, lalu Google, lalu Iklan. Penghapusan pengenal menyebabkan pengiklan menerima nilai nol sebagai gantinya.</li>
+        <li><strong>iOS dan iPadOS:</strong> Anda dapat menolak atau mencabut izin bagi aplikasi untuk melacak Anda melalui Pengaturan, lalu Privasi dan Keamanan, lalu Pelacakan, dan Anda dapat mengaktifkan pembatasan yang setara dengan Batasi Pelacakan Iklan sepanjang sistem Anda menyediakannya.</li>
+        <li><strong>Kendali akun Google:</strong> Anda dapat mengelola personalisasi iklan yang terkait dengan akun Google Anda di <a href="https://adssettings.google.com" target="_blank" rel="noopener noreferrer">https://adssettings.google.com</a>.</li>
+      </ul>
+      <h2>11.3 Perangkat penolakan industri</h2>
+      <p>Anda juga dapat memanfaatkan program penolakan konsumen yang dioperasikan oleh asosiasi industri periklanan, termasuk Digital Advertising Alliance di <a href="https://optout.aboutads.info" target="_blank" rel="noopener noreferrer">https://optout.aboutads.info</a>, Network Advertising Initiative di <a href="https://www.networkadvertising.org/choices/" target="_blank" rel="noopener noreferrer">https://www.networkadvertising.org/choices/</a>, dan, bagi pengguna di Eropa, Your Online Choices di <a href="https://www.youronlinechoices.eu" target="_blank" rel="noopener noreferrer">https://www.youronlinechoices.eu</a>.</p>
+      <h2>11.4 Akibat dari penolakan</h2>
+      <p>Menolak iklan yang dipersonalisasi tidak menghilangkan iklan dari Game. Hal itu hanya berarti bahwa iklan yang Anda temui akan kurang berkorelasi erat dengan minat yang diperkirakan dari Anda. Karena periklanan merupakan bagian integral dari ketersediaan Game yang berkelanjutan, Game pada saat ini tidak dapat digunakan sepenuhnya bebas dari iklan.</p>
+      <h2>11.5 Penghentian pengumpulan data</h2>
+      <p>Cara yang paling menyeluruh untuk menghentikan seluruh pengumpulan informasi lebih lanjut oleh teknologi Pihak Ketiga yang terintegrasi adalah dengan berhenti menggunakan Game dan mencopot pemasangan Aplikasi dari perangkat Anda.</p>
+
+      <h1>12. Penyimpanan Informasi</h1>
+      <p><strong>Data yang disimpan secara lokal.</strong> Data simpanan permainan dan preferensi yang berada pada perangkat Anda disimpan selama data tersebut tetap berada pada perangkat Anda, dan dihapus ketika Anda membersihkan data Aplikasi atau mencopot pemasangan Aplikasi, sebagaimana diuraikan dalam Bagian 5.2.</p>
+      <p><strong>Korespondensi.</strong> Pesan yang Anda kirimkan kepada kami, beserta informasi terkait apa pun, disimpan selama jangka waktu yang secara wajar diperlukan untuk menyelesaikan pertanyaan Anda, mendokumentasikan hubungan kami dengan Anda, dan memenuhi persyaratan hukum, akuntansi, dan penyelesaian sengketa kami, setelah itu dihapus atau dianonimkan secara tidak dapat dibalik.</p>
+      <p><strong>Informasi yang dipegang oleh Pihak Ketiga.</strong> Informasi yang dikumpulkan oleh Google melalui AdMob dan Google Fonts disimpan sesuai dengan praktik dan kebijakan penyimpanan Google sendiri, yang tidak berada di bawah kendali kami. Kami merujuk Anda pada sumber daya Google yang dicantumkan dalam Bagian 6.7 untuk keterangan tambahan.</p>
+      <p><strong>Informasi agregat.</strong> Informasi statistik yang telah diagregasi atau dianonimkan sedemikian rupa sehingga tidak lagi dapat dikaitkan dengan individu mana pun tidak tunduk pada pembatasan penyimpanan yang ditetapkan dalam Bagian ini.</p>
+
+      <h1>13. Transfer Data Internasional</h1>
+      <p>Google mengoperasikan infrastruktur yang terdistribusi secara global. Akibatnya, informasi yang dikirim dari perangkat Anda dalam rangka permintaan iklan dan permintaan jenis huruf dapat diproses di, dan ditransfer ke, negara selain negara tempat tinggal Anda, termasuk negara yang hukum pelindungan datanya mungkin memberikan tingkat pelindungan yang berbeda dari, dan mungkin kurang luas daripada, yang dijamin di yurisdiksi Anda sendiri.</p>
+      <p>Apabila transfer demikian terjadi, transfer tersebut diatur oleh pengamanan yang dipelihara Google, yang dapat mencakup keputusan kecukupan, klausul kontraktual standar, dan mekanisme transfer lain yang sah. Penanganan korespondensi kami yang terbatas juga dapat melibatkan transfer informasi ke yurisdiksi tempat layanan surat yang Anda atau kami gunakan dihosting. Dengan menggunakan Game, Anda mengakui bahwa transfer demikian dapat terjadi.</p>
+
+      <h1>14. Pengamanan Keamanan</h1>
+      <p>Kami menerapkan langkah teknis dan organisasional yang secara wajar dirancang untuk melindungi informasi yang berada di bawah kendali kami dari perusakan yang tidak disengaja atau melawan hukum, kehilangan, perubahan, pengungkapan tanpa izin, dan akses tanpa izin. Karena kami dengan sengaja menahan diri dari mengelola akun pengguna dan dari menyimpan data simpanan permainan pada server kami, jumlah informasi yang terpapar pada risiko tersebut sengaja dijaga seminimal mungkin.</p>
+      <p>Kendati demikian, tidak ada metode pengiriman elektronik atau penyimpanan elektronik yang sepenuhnya kebal terhadap kompromi, dan kami tidak dapat menjamin keamanan mutlak. Anda mengakui bahwa data yang tersimpan dalam Penyimpanan Lokal perangkat Anda tidak dienkripsi oleh Game dan hanya seaman perangkat tempat data tersebut berada, serta bahwa komunikasi dengan server Pihak Ketiga diatur oleh langkah keamanan yang digunakan oleh Pihak Ketiga tersebut.</p>
+
+      <h1>15. Privasi Anak</h1>
+      <p>Fair Life ditujukan bagi khalayak umum dan <strong>tidak ditujukan kepada anak di bawah usia tiga belas (13) tahun</strong>, maupun kepada anak yang berada di bawah usia persetujuan digital yang berlaku di yurisdiksinya, yang dapat setinggi enam belas (16) tahun. Kami tidak dengan sengaja meminta atau mengumpulkan Data Pribadi dari anak di bawah usia yang berlaku.</p>
+      <p>Kami mencermati, bagaimanapun, bahwa Game mengintegrasikan teknologi periklanan Pihak Ketiga yang dapat secara otomatis mengumpulkan informasi tertentu, seperti pengenal periklanan atau alamat IP, dari perangkat mana pun tempat Game dijalankan, dan bahwa kami tidak dapat secara mandiri memastikan usia orang yang mengoperasikan suatu perangkat tertentu. Apabila kami menentukan, atau diberi tahu, bahwa seorang pengguna adalah anak, atau apabila hukum yang berlaku mensyaratkan demikian, kami berhak mengonfigurasi integrasi periklanan sehingga pengguna diperlakukan sebagai anak atau sebagai pengguna di bawah usia persetujuan, yang berarti pembatasan atau penonaktifan iklan yang dipersonalisasi, dan kami akan mengambil langkah yang wajar untuk menghentikan pengumpulan lebih lanjut.</p>
+      <p>Berdasarkan hukum yurisdiksi tertentu, termasuk peraturan pelindungan data pribadi Republik Indonesia, pemrosesan data pribadi anak tunduk pada persyaratan yang lebih ketat, termasuk keharusan memperoleh persetujuan orang tua atau wali yang sah. Apabila Anda adalah orang tua atau wali yang sah dan Anda meyakini bahwa seorang anak di bawah pengasuhan Anda telah memberikan informasi kepada kami, atau bahwa informasi mengenai anak tersebut telah dikirimkan secara bertentangan dengan Kebijakan ini, mohon hubungi kami melalui rincian yang tercantum dalam Bagian 22, dan kami akan segera mengambil langkah untuk menyelidiki dan, bila sesuai, menghapus informasi tersebut sepanjang berada di bawah kendali kami.</p>
+      <p>Kami menganjurkan orang tua dan wali untuk mengawasi aktivitas daring anak, memanfaatkan fasilitas kendali orang tua dan pembatasan personalisasi iklan yang ditawarkan oleh perangkat mereka dan oleh Google, serta menginstruksikan anak agar tidak pernah mengungkapkan informasi pribadi melalui aplikasi apa pun tanpa izin.</p>
+
+      <h1>16. Hak Anda Berdasarkan Hukum yang Berlaku</h1>
+      <h2>16.1 Pernyataan umum</h2>
+      <p>Bergantung pada yurisdiksi tempat tinggal Anda, Anda mungkin berhak menjalankan hak tertentu berkenaan dengan Data Pribadi Anda. Kami menghormati hak-hak ini sepenuhnya sejauh yang disyaratkan oleh hukum yang berlaku. Penting untuk dipahami bahwa, karena kami tidak mengelola akun dan tidak mengumpulkan informasi pengidentifikasi di luar yang Anda berikan secara sukarela dalam korespondensi, Data Pribadi yang benar-benar dapat kami akses, koreksi, atau hapus sangat terbatas. Dalam banyak kasus, tanggapan kami yang tepat atas suatu permintaan adalah menegaskan bahwa kami tidak memegang data demikian, atau mengarahkan Anda kepada Pihak Ketiga yang memegangnya.</p>
+      <h2>16.2 Hak berdasarkan GDPR dan UK GDPR</h2>
+      <p>Apabila Anda berada di Wilayah Ekonomi Eropa atau Britania Raya, Anda mungkin berhak untuk: memperoleh konfirmasi mengenai apakah Data Pribadi Anda sedang diproses dan mengakses data tersebut; meminta perbaikan data yang tidak akurat atau tidak lengkap; meminta penghapusan data Anda dalam keadaan yang ditetapkan oleh hukum; meminta pembatasan pemrosesan; berkeberatan atas pemrosesan yang didasarkan pada kepentingan yang sah; menerima data Anda dalam format yang terstruktur, lazim digunakan, dan dapat dibaca mesin serta mengirimkannya kepada pengendali lain sepanjang hukum menentukan demikian; dan menarik persetujuan apa pun yang telah Anda berikan, tanpa memengaruhi keabsahan pemrosesan yang dilakukan sebelum penarikan tersebut. Anda juga memiliki hak untuk mengajukan pengaduan kepada otoritas pengawas pelindungan data yang berwenang di negara tempat tinggal Anda, tempat kerja Anda, atau tempat terjadinya dugaan pelanggaran.</p>
+      <h2>16.3 Hak berdasarkan hukum privasi negara bagian Amerika Serikat</h2>
+      <p>Apabila Anda berdomisili di negara bagian yang telah memberlakukan undang-undang privasi yang komprehensif, seperti California, Anda mungkin berhak untuk: mengetahui kategori Data Pribadi yang telah dikumpulkan dan tujuan penggunaannya; mengakses keping-keping Data Pribadi spesifik yang telah dikumpulkan; meminta penghapusan dan koreksi Data Pribadi; menolak "penjualan" atau "pembagian" Data Pribadi dan iklan bertarget; membatasi penggunaan Data Pribadi yang sensitif sepanjang berlaku; dan terbebas dari perlakuan diskriminatif karena menjalankan hak-hak ini. Kami tidak mendiskriminasi pengguna mana pun yang menjalankan hak privasi.</p>
+      <h2>16.4 Hak berdasarkan hukum Republik Indonesia</h2>
+      <p>Apabila Anda adalah subjek data di wilayah Republik Indonesia, maka sesuai dengan Undang-Undang Nomor 27 Tahun 2022 tentang Pelindungan Data Pribadi beserta peraturan pelaksanaannya, Anda mungkin berhak untuk: memperoleh informasi mengenai kejelasan identitas, dasar kepentingan hukum, tujuan permintaan, dan akuntabilitas pihak yang meminta Data Pribadi Anda; melengkapi, memperbarui, dan membetulkan kesalahan atau ketidakakuratan Data Pribadi Anda; memperoleh akses terhadap, dan salinan dari, Data Pribadi Anda; mengakhiri pemrosesan, menghapus, dan memusnahkan Data Pribadi Anda; menarik persetujuan Anda; mengajukan keberatan atas keputusan yang semata-mata didasarkan pada pemrosesan otomatis, termasuk pemrofilan, yang menimbulkan akibat hukum atau memengaruhi Anda secara signifikan; menunda atau membatasi pemrosesan secara proporsional dengan tujuan pemrosesan; menggugat dan menerima ganti rugi, dan bila sesuai kompensasi, atas pelanggaran; serta memperoleh dan menggunakan Data Pribadi Anda dalam bentuk yang lazim digunakan dan dapat dibaca oleh sistem, sepanjang berlaku.</p>
+      <h2>16.5 Hak berdasarkan rezim hukum lainnya</h2>
+      <p>Penduduk yurisdiksi lain, termasuk Brasil, Kanada, Australia, dan negara anggota berbagai kerangka pelindungan data regional, mungkin menikmati hak yang analog dengan, atau yang berbeda dari, hak-hak yang disebutkan di atas. Kami akan berupaya menghormati seluruh hak yang secara sah berhak Anda jalankan.</p>
+      <h2>16.6 Cara menjalankan hak Anda</h2>
+      <p>Untuk menjalankan hak apa pun di atas, mohon kirimkan permintaan Anda ke alamat surat elektronik yang tercantum dalam Bagian 22, dengan menguraikan sifat permintaan Anda secara cukup terperinci. Kami dapat meminta Anda untuk menyediakan informasi yang memadai guna memverifikasi identitas Anda dan memastikan bahwa permintaan tersebut menyangkut Data Pribadi yang benar-benar terkait dengan Anda, dan kami dapat menolak permintaan yang jelas tidak berdasar, berlebihan, atau dengan cara lain tidak diperkenankan menurut hukum yang berlaku, dalam hal mana kami akan menjelaskan alasan kami. Kami akan menanggapi dalam jangka waktu yang ditetapkan oleh hukum yang berlaku.</p>
+      <h2>16.7 Hak yang dapat dijalankan terhadap Google</h2>
+      <p>Berkenaan dengan informasi yang dikumpulkan dan dikendalikan oleh Google melalui AdMob dan Google Fonts, Anda dapat menjalankan hak Anda secara langsung terhadap Google melalui perangkat dan prosedur yang diuraikan dalam sumber daya Google yang tercantum dalam Bagian 6.7, termasuk halaman Pengaturan Iklan Google.</p>
+
+      <h1>17. Tautan, Layanan, dan Platform Pihak Ketiga</h1>
+      <p>Kebijakan ini, Game, dan kanal dukungan yang kami sediakan memuat rujukan dan tautan menuju sumber daya Pihak Ketiga, termasuk halaman kebijakan Google, portal penolakan industri, layanan surat elektronik, dan platform pesan WhatsApp. Kami tidak mengoperasikan maupun mengendalikan sumber daya ini, dan kami tidak memikul tanggung jawab atas isi, keamanan, atau praktik privasinya. Penggunaan Anda atas sumber daya semacam itu diatur secara eksklusif oleh ketentuan dan kebijakan operatornya, dan kami menganjurkan Anda untuk menelaahnya. Secara khusus, apabila Anda memilih untuk menghubungi kami melalui WhatsApp, komunikasi Anda akan tunduk pada praktik privasi platform tersebut dan operatornya.</p>
+      <p>Selain itu, platform distribusi tempat Anda memperoleh Aplikasi, seperti toko aplikasi, secara independen mengumpulkan informasi mengenai unduhan dan penggunaan Aplikasi oleh Anda sesuai dengan kebijakan privasinya sendiri, dan kami tidak memiliki kendali atas pengumpulan tersebut.</p>
+
+      <h1>18. Do Not Track dan Global Privacy Control</h1>
+      <p>Karena pada saat ini tidak terdapat standar teknis maupun hukum yang seragam yang mengatur penafsiran sinyal "Do Not Track" pada peramban, Game tidak menanggapi sinyal tersebut. Kendati demikian, kami menghormati pembatasan personalisasi iklan tingkat perangkat dan penetapan persetujuan yang dikomunikasikan kepada kit pengembangan perangkat lunak AdMob, dan, apabila sinyal preferensi penolakan yang diakui seperti Global Privacy Control disediakan bagi Game oleh platform Anda, kami akan menghormatinya sejauh yang disyaratkan hukum yang berlaku dan yang dimungkinkan oleh kelayakan teknis.</p>
+
+      <h1>19. Pemberitahuan Pelanggaran Data Pribadi</h1>
+      <p>Dalam hal yang kecil kemungkinannya terjadi bahwa suatu pelanggaran keamanan mengakibatkan perusakan, kehilangan, perubahan, pengungkapan tanpa izin, atau akses tanpa izin terhadap Data Pribadi yang berada di bawah kendali kami, secara tidak sengaja maupun melawan hukum, dan apabila pelanggaran tersebut berpotensi menimbulkan risiko terhadap hak dan kebebasan Anda, kami akan memberi tahu otoritas pengawas yang berwenang dan individu yang terdampak dalam jangka waktu dan dengan cara yang ditetapkan oleh hukum yang berlaku. Karena kami memegang Data Pribadi yang sangat sedikit, kami menganggap kemungkinan insiden semacam itu sebagai hal yang jauh.</p>
+
+      <h1>20. Hukum yang Berlaku</h1>
+      <p>Kebijakan ini, dan setiap sengketa yang timbul sehubungan dengannya, ditafsirkan dan diatur sesuai dengan hukum Republik Indonesia, tanpa memperhatikan asas pertentangan hukumnya, dan tanpa mengesampingkan ketentuan wajib mengenai pelindungan konsumen atau pelindungan data di yurisdiksi tempat tinggal Anda yang secara hukum tidak dapat dikesampingkan atau digantikan melalui perjanjian.</p>
+
+      <h1>21. Perubahan Kebijakan Privasi Ini</h1>
+      <p>Kami dapat merevisi Kebijakan ini dari waktu ke waktu untuk mencerminkan perubahan pada Game, pada teknologi Pihak Ketiga yang dimuatnya, pada praktik kami, atau pada hukum yang berlaku. Versi yang berlaku akan senantiasa dipublikasikan pada halaman ini, dan keterangan "Tanggal Berlaku dan Terakhir Diperbarui" di bagian atas halaman ini akan diubah setiap kali suatu revisi diundangkan.</p>
+      <p>Apabila suatu revisi bersifat material, seperti diperkenalkannya jaringan iklan tambahan atau kategori pengumpulan data baru, kami akan berupaya memberikan pemberitahuan yang menonjol, yang dapat berbentuk notifikasi dalam aplikasi atau pemberitahuan yang mencolok pada halaman ini. Apabila hukum yang berlaku mensyaratkan agar kami memperoleh persetujuan baru dari Anda untuk perubahan tertentu, kami akan memintanya sebelum perubahan tersebut berlaku.</p>
+      <p>Penggunaan Game yang Anda lanjutkan setelah suatu revisi berlaku merupakan pengakuan Anda atas Kebijakan yang telah direvisi, dengan tetap memperhatikan hak yang mungkin Anda miliki menurut hukum yang berlaku. Kami menganjurkan Anda untuk menelaah halaman ini secara berkala.</p>
 
       <div class="warning-box">
-        &#9888;&#65039; Fair Life berjalan sepenuhnya offline, bahkan sejak peluncuran pertama, dan tidak mengumpulkan, mengirim, atau membagikan data pribadi apa pun dari perangkat Anda.
+        <p>&#9888;&#65039; <strong>Pemberitahuan penting.</strong> Fair Life memerlukan koneksi internet yang aktif dan menampilkan iklan yang disampaikan oleh Google AdMob.</p>
+        <p>Dalam rangka menyampaikan iklan tersebut, Google dapat secara otomatis mengumpulkan informasi dari perangkat Anda, seperti pengenal periklanan, alamat IP, serta data teknis dan interaksi iklan Anda, sebagaimana diuraikan dalam Bagian 6.</p>
+        <p>Kami tidak mewajibkan akun, kami tidak mengoperasikan analitik permainan kami sendiri, kami tidak menjual informasi Anda, dan data simpanan permainan Anda tetap berada secara eksklusif pada perangkat Anda sendiri. Anda dapat membatasi personalisasi iklan kapan saja melalui kendali yang diuraikan dalam Bagian 11.</p>
       </div>
 
-      <h1>5. Kontak</h1>
-      <p>Jika Anda memiliki pertanyaan mengenai Kebijakan Privasi ini, silakan hubungi kami:</p>
+      <h1>22. Kontak</h1>
+      <p>Apabila Anda memiliki pertanyaan, kekhawatiran, keluhan, atau permintaan mengenai Kebijakan Privasi ini, mengenai praktik data kami, atau mengenai pelaksanaan hak apa pun yang diuraikan di sini, jangan ragu untuk menghubungi kami melalui salah satu kanal berikut:</p>
       <ul>
-        <li>Email: <a href="mailto:contact@nicefox.id">contact@nicefox.id</a></li>
-        <li>No. Tlp: <a href="https://wa.me/6285126425954">+62 851-2642-5954</a></li>
+        <li>Email: <a href="mailto:nicefox.gd@gmail.com">nicefox.gd@gmail.com</a></li>
+        <li>Telepon / WhatsApp: <a href="https://wa.me/6285126425954">+62 851-2642-5954</a></li>
       </ul>
+      <p>Tombol "Hubungi Kami" yang terdapat pada layar judul Game membuka pesan yang ditujukan ke alamat surat elektronik yang sama. Kami akan berupaya mengakui dan menyelesaikan setiap pertanyaan yang sah dalam jangka waktu yang wajar, dan bagaimanapun dalam jangka waktu yang ditetapkan oleh hukum yang berlaku.</p>
 
       <button class="btn-close-window" onclick="window.close()">TUTUP HALAMAN</button>
     </div>
